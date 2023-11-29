@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="contact">
+        <h2>Contact Me!</h2>
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
+                    <div class="error-txt">Full Name can't be blank</div>
+                </div>
+                <div class="input-field field">
+                    <input type="email" placeholder="Email Address" id="email" class="item" autocomplete="off">
+                    <div class="error-txt email">Email address can't be blank</div>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Phone Number" id="phone" class="item" autocomplete="off">
+                    <div class="error-txt">Phone Number can't be blank</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
+                    <div class="error-txt">Subject can't be blank</div>
+                </div>
+            </div>
+
+            <div class="textarea-field field">
+                <textarea name="" id="message" class="item" cols="30" rows="10" placeholder="Your Message"
+                    autocomplete="off"></textarea>
+                <div class="error-txt">Message can't be blank</div>
+            </div>
+            .
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
